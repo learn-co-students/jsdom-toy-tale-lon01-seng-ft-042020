@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   getRequest();
   postRequest();
-  // likeToy();
+  
 })
 
   // ------------------------------- GET REQUEST - Read all toys
@@ -54,11 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //p tag with how many likes that toy has
     let toyLikes = document.createElement("p");
     toyLikes.innerHTML = `${element.likes} Likes`
-   
-    function increaseToyLikes(toyLikes) {
-      toyLikes.innerHTML = `${element.likes+=1} Likes`
-    }
-
+  
     //button tag with a class "like-btn"
     const likeButton = document.createElement("button");
     likeButton.setAttribute("class", "like-btn")
@@ -89,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       likes.innerHTML = `${element.likes} Likes`
      })
     })
+  
     // debugger
  //----------------- like button -----------------------------
   
